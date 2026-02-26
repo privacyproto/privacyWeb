@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>App 空间分享教程</title>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+h1 { text-align: center; margin-top: 0; }
+h2 { font-size: 1.1rem; margin-top: 28px; margin-bottom: 12px; }
+.section { margin-top: 32px; }
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.badge.pre { background: #E3F2FD; color: #1565C0; }
+.badge.owner { background: #E8F5E9; color: #2E7D32; }
+.badge.guest { background: #FFF3E0; color: #E65100; }
+.step {
+    margin: 12px 0;
+    padding: 12px 16px;
+    background: #fafafa;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.tip {
+    background: #F1F8FF;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+ul { padding-left: 22px; margin: 8px 0; }
+li { margin: 6px 0; }
+.tutorial-img {
+    margin: 12px 0;
+    text-align: center;
+}
+.tutorial-img img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 420px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+/* 一、二两种情况布局 */
+.case-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 640px) {
+    .case-row { grid-template-columns: 1fr; }
+}
+.case-block {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 8px;
+}
+.case-block .case-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    color: #333;
+}
+.case-block.case-one .case-title { border-bottom-color: #81C784; }
+.case-block.case-two .case-title { border-bottom-color: #FFB74D; }
+.case-block .step {
+    margin: 8px 0;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+}
+.case-block .tutorial-img {
+    margin: 10px 0;
+}
+.case-block .tutorial-img img {
+    max-height: 320px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>空间分享教程</h1>
+    <p style="text-align: center; color: #666;">通过 iCloud 分享空间，与家人或朋友共同记录与查看时刻。</p>
+
+    <div class="section">
+        <h2><span class="badge pre">前置条件</span></h2>
+        <ul>
+            <li>设备已登录 <strong>iCloud（Apple ID）</strong>，分享依赖 iCloud。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><span class="badge owner">发起分享（空间创建者）</span></h2>
+        <div class="step">1️⃣ 在首页进入<strong>你创建的</strong>某个空间的时间线。</div>
+        <div class="step">2️⃣ 点击右上角「更多」菜单（⋯），选择「分享」。</div>
+        <div class="step">3️⃣ 在分享页点击「生成邀请链接」或「获取链接」。</div>
+        <div class="tutorial-img"><img src="img/1.png" alt="分享入口示意"></div>
+        <p style="margin: 16px 0 8px; font-weight: 600; color: #555;">分两种方式，任选其一：</p>
+        <div class="case-row">
+            <div class="case-block case-one">
+                <div class="case-title">一、所有人都可通过链接加入</div>
+                <div class="step">选择「共享选项」</div>
+                <div class="tutorial-img"><img src="img/2.png" alt="共享选项"></div>
+                <div class="step">勾选「任何人都可以添加用户」</div>
+                <div class="tutorial-img"><img src="img/3.png" alt="任何人可添加"></div>
+                <div class="step">返回「拷贝链接」，将链接发送给被邀请方</div>
+                <div class="tutorial-img"><img src="img/4.png" alt="拷贝链接"></div>
+            </div>
+            <div class="case-block case-two">
+                <div class="case-title">二、分享给特定的人</div>
+                <div class="step">选择「与更多人共享」</div>
+                <div class="tutorial-img"><img src="img/2_1.png" alt="与更多人共享"></div>
+                <div class="step">选择能联系到接受者的方式发送</div>
+                <div class="tutorial-img"><img src="img/5.png" alt="发送方式"></div>
+                <div class="step">输入对方 Apple ID，点击键盘「完成」，再点「共享链接」</div>
+                <div class="tutorial-img"><img src="img/7.png" alt="共享链接"></div>
+            </div>
+        </div>
+        <div class="tip">
+            📌 说明：<br/>
+            • 只有<strong>你创建的空间</strong>会显示「分享」入口；别人分享给你的空间没有该入口。<br/>
+            • 链接生成后，获得链接的人打开即可接受邀请，接受后会在其首页看到该空间。
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="badge guest">接受分享（被邀请方）</span></h2>
+        <div class="step">1️⃣ 收到分享链接后，复制链接打开app,，</div>
+        <div class="step">2️⃣ 进入首页点击右上角“+”，选择“加入空间” 粘贴链接到输入框，点击加入。</div>
+        <div class="step">3️⃣ 成功后如果没有首页没有看到空间，则app退到后台，重新打开,如果还是没有，在重复操作一次</div>
+    </div>
+
+    <div class="section">
+        <h2>常见问题</h2>
+        <div class="step">
+            ❓ 打开链接提示没有权限？<br/>
+            👉 请使用<strong>被邀请的 Apple ID</strong> 登录本 App 与 iCloud。
+        </div>
+        <div class="step">
+            ❓ 链接在 Safari 里只打开网页？<br/>
+            👉 点击页面或浏览器中的「在 App 中打开」进入本 App 接受邀请。
+        </div>
+        <div class="step">
+            ❓ 如何不再参与某个共享空间？<br/>
+            👉 在系统「设置 → Apple ID → iCloud → 管理账户 → 共享」中可停止参与该共享（或联系空间创建者取消你的访问权限）。
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
