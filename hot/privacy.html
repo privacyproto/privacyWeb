@@ -3,91 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StreakMate Privacy Policy">
-    <title>StreakMate Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for StreakMate">
+    <title>Privacy Policy - StreakMate</title>
 
     <style>
+        :root {
+            color-scheme: light dark;
+            --background: #f6f7fb;
+            --card: #ffffff;
+            --text: #172033;
+            --secondary: #667085;
+            --accent: #ff6a2a;
+            --border: #e8eaf0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #111318;
+                --card: #1b1e25;
+                --text: #f5f6f8;
+                --secondary: #a8adb8;
+                --accent: #ff824c;
+                --border: #30343d;
+            }
+        }
+
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            padding: 0;
-            background: #f7f7f9;
-            color: #1c1c1e;
+            padding: 24px 16px 48px;
+            background: var(--background);
+            color: var(--text);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                          Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
         .container {
-            max-width: 860px;
+            width: 100%;
+            max-width: 820px;
             margin: 0 auto;
-            padding: 48px 20px 80px;
         }
 
         .header {
-            margin-bottom: 32px;
+            padding: 28px 4px 20px;
+        }
+
+        .app-name {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent);
         }
 
         h1 {
-            margin: 0 0 12px;
-            font-size: 42px;
-            line-height: 1.15;
-            letter-spacing: -1.5px;
+            margin: 0;
+            font-size: 36px;
+            line-height: 1.25;
+            letter-spacing: -0.7px;
         }
 
         .updated {
-            color: #8e8e93;
+            margin-top: 10px;
+            color: var(--secondary);
             font-size: 14px;
         }
 
-        .intro {
-            margin-top: 24px;
-            color: #48484a;
-            font-size: 17px;
-        }
-
         .card {
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 36px;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
-        }
-
-        section + section {
-            margin-top: 32px;
-            padding-top: 32px;
-            border-top: 1px solid #eeeeF2;
+            margin-top: 16px;
+            padding: 28px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            box-shadow: 0 10px 35px rgba(20, 30, 55, 0.06);
         }
 
         h2 {
-            margin: 0 0 14px;
-            font-size: 23px;
-            line-height: 1.35;
+            margin: 30px 0 10px;
+            font-size: 21px;
+            line-height: 1.4;
         }
 
-        h3 {
-            margin: 22px 0 8px;
-            font-size: 17px;
+        h2:first-child {
+            margin-top: 0;
         }
 
         p {
-            margin: 10px 0;
+            margin: 8px 0 14px;
         }
 
         ul {
+            margin: 8px 0 18px;
             padding-left: 22px;
-            margin: 12px 0;
         }
 
         li {
-            margin: 8px 0;
+            margin: 7px 0;
         }
 
         a {
-            color: #f15f72;
+            color: var(--accent);
             text-decoration: none;
             word-break: break-word;
         }
@@ -97,519 +118,410 @@
         }
 
         .notice {
-            margin-top: 18px;
-            padding: 18px;
-            border-radius: 16px;
-            background: #fff6f7;
-            border: 1px solid #f8dce1;
-            color: #4a3a3d;
+            margin: 18px 0;
+            padding: 16px 18px;
+            color: var(--secondary);
+            background: color-mix(in srgb, var(--accent) 8%, var(--card));
+            border-left: 4px solid var(--accent);
+            border-radius: 12px;
         }
 
-        footer {
-            margin-top: 32px;
+        .divider {
+            height: 1px;
+            margin: 38px 0;
+            background: var(--border);
+        }
+
+        .footer {
+            padding: 26px 4px;
+            color: var(--secondary);
             text-align: center;
-            color: #8e8e93;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         @media (max-width: 600px) {
-            .container {
-                padding: 28px 12px 60px;
+            body {
+                padding: 12px 12px 36px;
+            }
+
+            .header {
+                padding: 22px 8px 12px;
             }
 
             h1 {
-                font-size: 34px;
+                font-size: 31px;
             }
 
             .card {
-                padding: 24px 20px;
-                border-radius: 20px;
+                padding: 22px 19px;
+                border-radius: 18px;
             }
         }
     </style>
 </head>
 
 <body>
+<main class="container">
 
-<div class="container">
-
-    <div class="header">
+    <header class="header">
+        <div class="app-name">🔥 StreakMate</div>
         <h1>Privacy Policy</h1>
+        <div class="updated">Last updated: July 24, 2026</div>
+    </header>
 
-        <div class="updated">
-            Last updated: July 12, 2026
+    <section class="card">
+        <h2>1. Introduction</h2>
+
+        <p>
+            Welcome to StreakMate. We respect your privacy and are committed
+            to protecting it.
+        </p>
+
+        <p>
+            This Privacy Policy explains how StreakMate handles information
+            when you use the app, its Home Screen widgets, Lock Screen widgets,
+            notifications, and related features.
+        </p>
+
+        <div class="notice">
+            StreakMate is designed as a local utility. It does not require you
+            to create an account or provide personal information to use its
+            core features.
         </div>
 
-        <p class="intro">
-            StreakMate helps users find and connect with matching partners
-            for third-party social platforms. We value your privacy and aim
-            to collect only the information reasonably necessary to provide
-            matching, safety, subscription, and notification features.
+        <h2>2. Information We Collect</h2>
+
+        <p>
+            StreakMate does not directly collect personal information such as
+            your name, email address, phone number, precise location, contacts,
+            photos, messages, or social media credentials.
         </p>
-    </div>
-
-    <div class="card">
-
-        <section>
-            <h2>1. Information We Collect</h2>
-
-            <h3>Information You Provide</h3>
-
-            <p>
-                Depending on how you use StreakMate, you may provide:
-            </p>
-
-            <ul>
-                <li>
-                    Third-party social platform usernames or identifiers
-                    that you choose to add.
-                </li>
-
-                <li>
-                    Your gender and matching preferences.
-                </li>
-
-                <li>
-                    Reports, block actions, feedback, and other information
-                    that you voluntarily submit.
-                </li>
-            </ul>
-
-            <h3>Matching and App Activity</h3>
-
-            <p>
-                We may process information related to your use of StreakMate,
-                including:
-            </p>
-
-            <ul>
-                <li>
-                    Matching requests and whether a request was sent or received.
-                </li>
-
-                <li>
-                    Match status, including pending, accepted, declined,
-                    or expired requests.
-                </li>
-
-                <li>
-                    Selected social platform and matching preferences.
-                </li>
-
-                <li>
-                    Match history and request timestamps.
-                </li>
-
-                <li>
-                    Reports, blocks, and other safety-related actions.
-                </li>
-
-                <li>
-                    App activity and diagnostic information used to operate
-                    and improve the service.
-                </li>
-            </ul>
-
-            <h3>Device and Technical Information</h3>
-
-            <p>
-                We may collect or process limited technical information,
-                including:
-            </p>
-
-            <ul>
-                <li>
-                    App or device identifiers used to distinguish an app
-                    installation.
-                </li>
-
-                <li>
-                    Device language and time zone.
-                </li>
-
-                <li>
-                    App version and operating system information.
-                </li>
 
-                <li>
-                    IP address, request timestamps, and server logs.
-                </li>
-
-                <li>
-                    Diagnostic and error information.
-                </li>
-
-                <li>
-                    Push notification registration tokens if notifications
-                    are enabled.
-                </li>
-            </ul>
-
-            <h3>Subscription Information</h3>
-
-            <p>
-                If you subscribe to StreakMate Pro, purchases are processed
-                by Apple through the App Store.
-            </p>
-
-            <p>
-                We may receive subscription status and entitlement information
-                required to unlock premium matching features.
-            </p>
-
-            <p>
-                We do not receive or store your full payment card details.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>2. How We Use Your Information</h2>
-
-            <p>
-                We use information to:
-            </p>
-
-            <ul>
-                <li>
-                    Provide, operate, and maintain StreakMate.
-                </li>
-
-                <li>
-                    Find potential matching partners.
-                </li>
-
-                <li>
-                    Apply available matching preferences.
-                </li>
-
-                <li>
-                    Manage sent and received match requests.
-                </li>
-
-                <li>
-                    Display platform usernames after the applicable matching
-                    process has been completed.
-                </li>
-
-                <li>
-                    Maintain match history.
-                </li>
-
-                <li>
-                    Provide report and block functionality.
-                </li>
-
-                <li>
-                    Verify StreakMate Pro subscription entitlements.
-                </li>
-
-                <li>
-                    Send service-related push notifications when enabled.
-                </li>
-
-                <li>
-                    Detect abuse, fraud, or misuse of the service.
-                </li>
-
-                <li>
-                    Investigate reports and safety issues.
-                </li>
-
-                <li>
-                    Diagnose technical problems and improve the app.
-                </li>
-
-                <li>
-                    Comply with legal obligations.
-                </li>
-            </ul>
-        </section>
-
-
-        <section>
-            <h2>3. How Matching Information Is Shared</h2>
-
-            <p>
-                StreakMate is designed to help users connect through
-                third-party social platforms.
-            </p>
-
-            <p>
-                Information you provide for matching may be displayed to
-                another StreakMate user as part of the matching process.
-            </p>
-
-            <p>
-                Before a match is accepted, a social platform username may be
-                partially hidden.
-            </p>
-
-            <p>
-                The complete platform username may be displayed after the
-                applicable matching or acceptance process has been completed.
-            </p>
-
-            <div class="notice">
-                StreakMate does not provide in-app private messaging.
-                Conversations that take place on Snapchat, Instagram,
-                Telegram, Discord, TikTok, or other third-party platforms
-                are governed by the terms and privacy practices of those
-                platforms.
-            </div>
-        </section>
-
-
-        <section>
-            <h2>4. Push Notifications</h2>
-
-            <p>
-                StreakMate may use Firebase Cloud Messaging to deliver
-                service-related push notifications.
-            </p>
-
-            <p>
-                If notifications are enabled, a push notification registration
-                token may be processed to deliver notifications to your device.
-            </p>
-
-            <p>
-                Notifications may include information about matching requests
-                or changes to match status.
-            </p>
-
-            <p>
-                You can disable notifications at any time through your device
-                settings.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>5. Third-Party Service Providers</h2>
-
-            <p>
-                We may use third-party service providers to operate StreakMate.
-                These providers may process information on our behalf only as
-                necessary to provide their services.
-            </p>
-
-            <p>
-                Service providers may include:
-            </p>
-
-            <ul>
-                <li>
-                    Cloudflare for infrastructure, API hosting, databases,
-                    networking, and security.
-                </li>
-
-                <li>
-                    Google Firebase for push notification delivery.
-                </li>
-
-                <li>
-                    Apple for App Store subscription and purchase processing.
-                </li>
-            </ul>
-
-            <p>
-                These providers may process information according to their own
-                applicable privacy policies and legal obligations.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>6. Data Retention</h2>
-
-            <p>
-                We retain information only for as long as reasonably necessary
-                to provide StreakMate, maintain matching records, protect users,
-                prevent abuse, resolve disputes, and meet legal obligations.
-            </p>
-
-            <p>
-                Retention periods may vary depending on the type of information.
-            </p>
-
-            <p>
-                Safety information related to reports or blocked users may be
-                retained for a longer period when reasonably necessary to
-                prevent repeated abuse or protect the service.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>7. Data Security</h2>
-
-            <p>
-                We use reasonable administrative and technical measures
-                designed to protect information against unauthorized access,
-                misuse, loss, or alteration.
-            </p>
-
-            <p>
-                However, no method of electronic transmission or storage is
-                completely secure, and we cannot guarantee absolute security.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>8. Your Privacy Choices and Rights</h2>
-
-            <p>
-                Depending on your country or region, you may have rights
-                regarding your personal information.
-            </p>
-
-            <p>
-                These rights may include the right to:
-            </p>
-
-            <ul>
-                <li>
-                    Request access to information associated with your use
-                    of StreakMate.
-                </li>
-
-                <li>
-                    Request correction of inaccurate information.
-                </li>
-
-                <li>
-                    Request deletion of information.
-                </li>
-
-                <li>
-                    Object to or restrict certain processing where applicable.
-                </li>
-
-                <li>
-                    Withdraw consent where processing is based on consent.
-                </li>
-            </ul>
-
-            <p>
-                StreakMate does not require a traditional user account.
-                Therefore, we may request limited technical information,
-                such as an app or device identifier, to locate data associated
-                with your installation and verify a privacy request.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>9. Children</h2>
-
-            <p>
-                StreakMate is not intended for children under the age of 13.
-            </p>
-
-            <p>
-                We do not knowingly collect personal information from children
-                under 13.
-            </p>
-
-            <p>
-                Where local law requires a higher minimum age or additional
-                parental consent, applicable local legal requirements may apply.
-            </p>
-
-            <p>
-                If you believe a child has provided information to StreakMate
-                in violation of this Privacy Policy, please contact us so that
-                we can review the matter and take appropriate action.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>10. Third-Party Platforms</h2>
-
-            <p>
-                StreakMate may help you find users for or open third-party
-                social platforms.
-            </p>
-
-            <p>
-                We do not own, operate, or control Snapchat, Instagram,
-                Telegram, Discord, TikTok, or other third-party services.
-            </p>
-
-            <p>
-                We are not responsible for the content, privacy practices,
-                communications, or activities that occur on third-party
-                platforms.
-            </p>
-
-            <p>
-                You should review the terms and privacy policies of each
-                third-party platform before using that service or sharing
-                personal information.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>11. International Data Processing</h2>
-
-            <p>
-                StreakMate may use service providers that process information
-                in countries other than the country where you live.
-            </p>
-
-            <p>
-                Where required by applicable law, we take reasonable steps
-                designed to process information in accordance with applicable
-                data protection requirements.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>12. Changes to This Privacy Policy</h2>
-
-            <p>
-                We may update this Privacy Policy from time to time.
-            </p>
-
-            <p>
-                When changes are made, we will update the
-                "Last updated" date shown at the top of this page.
-            </p>
-
-            <p>
-                We encourage you to review this Privacy Policy periodically.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>13. Contact Us</h2>
-
-            <p>
-                If you have questions about this Privacy Policy, privacy
-                requests, or data deletion requests, please contact us:
-            </p>
-
-            <p>
-                Email:
-                <a href="mailto:tellme068@outlook.com">
-                    tellme068@outlook.com
-                </a>
-            </p>
-        </section>
-
-    </div>
-
-    <footer>
+        <p>
+            You do not need to sign in to Snapchat, TikTok, QQ, or any other
+            third-party platform through StreakMate.
+        </p>
+
+        <h2>3. Information Stored on Your Device</h2>
+
+        <p>
+            The app may store the following information locally on your device:
+        </p>
+
+        <ul>
+            <li>Platforms you choose to enable;</li>
+            <li>Notification times and notification text;</li>
+            <li>Daily completion status;</li>
+            <li>App preferences and interface settings;</li>
+            <li>Information needed to display Home Screen and Lock Screen widgets.</li>
+        </ul>
+
+        <p>
+            This information is used only to provide the app’s functionality.
+            It is not uploaded to our servers.
+        </p>
+
+        <h2>4. Notifications</h2>
+
+        <p>
+            With your permission, StreakMate may send local notifications at
+            the times you select.
+        </p>
+
+        <p>
+            Notification scheduling is handled by the operating system on your
+            device. You can disable or change notification permission at any
+            time in your device settings.
+        </p>
+
+        <h2>5. Widgets</h2>
+
+        <p>
+            StreakMate provides Home Screen and Lock Screen widgets that display
+            selected platform names and daily completion status.
+        </p>
+
+        <p>
+            Widget information is shared locally between the main app and its
+            widget extension through Apple-provided system storage. This
+            information is not transmitted to us.
+        </p>
+
+        <h2>6. Third-Party Platforms</h2>
+
+        <p>
+            StreakMate may display the names or icons of supported third-party
+            platforms solely to help you organize your daily interactions.
+        </p>
+
+        <p>
+            StreakMate is an independent application and is not affiliated with,
+            endorsed by, sponsored by, or officially associated with Snapchat,
+            TikTok, QQ, Kuaishou, or any other third-party platform.
+        </p>
+
+        <p>
+            We do not access your accounts, messages, friend lists, activity
+            history, passwords, or content from those platforms.
+        </p>
+
+        <h2>7. Data Sharing and Sale</h2>
+
+        <p>
+            We do not sell, rent, trade, or share your personal information
+            with advertisers, data brokers, or other third parties.
+        </p>
+
+        <p>
+            Because the app’s core information remains on your device, we do
+            not have access to your daily completion records or platform
+            selections.
+        </p>
+
+        <h2>8. Tracking and Advertising</h2>
+
+        <p>
+            StreakMate does not use your information to track you across apps
+            or websites owned by other companies.
+        </p>
+
+        <p>
+            The app does not use your platform selections or interaction status
+            for targeted advertising.
+        </p>
+
+        <h2>9. Data Retention and Deletion</h2>
+
+        <p>
+            Information created in StreakMate remains on your device until you
+            change it, reset the app’s data, or delete the app.
+        </p>
+
+        <p>
+            You may delete locally stored information by removing the relevant
+            settings within the app or by uninstalling StreakMate.
+        </p>
+
+        <p>
+            Since StreakMate does not require an account and does not upload
+            this information to our servers, there is no separate online
+            account or server-side profile to delete.
+        </p>
+
+        <h2>10. Children’s Privacy</h2>
+
+        <p>
+            StreakMate does not knowingly collect personal information from
+            children. The app does not provide public profiles, messaging,
+            random matching, or other features that allow users to communicate
+            with strangers.
+        </p>
+
+        <p>
+            Parents or guardians who believe that a child has provided personal
+            information to us may contact us using the email address below.
+        </p>
+
+        <h2>11. Security</h2>
+
+        <p>
+            We use the security features provided by iOS to help protect
+            information stored by the app.
+        </p>
+
+        <p>
+            However, no device, software, or storage method can be guaranteed
+            to be completely secure. You are responsible for maintaining the
+            security of your device and system account.
+        </p>
+
+        <h2>12. Changes to This Privacy Policy</h2>
+
+        <p>
+            We may update this Privacy Policy when the app’s features or legal
+            requirements change.
+        </p>
+
+        <p>
+            Any updated version will be published on this page with a revised
+            “Last updated” date. Continued use of the app after an update means
+            that you acknowledge the revised policy.
+        </p>
+
+        <h2>13. Contact Us</h2>
+
+        <p>
+            For privacy questions, support requests, or concerns about this
+            policy, contact us at:
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:your-email@example.com">
+                your-email@example.com
+            </a>
+        </p>
+
+        <div class="divider"></div>
+
+        <h1 lang="zh-CN" style="font-size: 30px;">隐私政策</h1>
+        <div class="updated">最后更新日期：2026年7月24日</div>
+
+        <h2>一、引言</h2>
+
+        <p>
+            欢迎使用 StreakMate（续火花）。我们重视并尊重您的隐私。
+            本隐私政策用于说明您使用 App、桌面小组件、锁屏小组件及通知功能时，
+            相关信息的处理方式。
+        </p>
+
+        <div class="notice">
+            StreakMate 是一款以本地功能为主的工具。使用核心功能无需注册账号，
+            也无需向我们提供姓名、手机号或其他身份信息。
+        </div>
+
+        <h2>二、我们收集的信息</h2>
+
+        <p>
+            StreakMate 不会主动收集您的姓名、电子邮箱、电话号码、精确位置、
+            通讯录、照片、聊天内容或社交平台登录凭证。
+        </p>
+
+        <p>
+            使用本 App 时，您无需通过 StreakMate 登录抖音、QQ、Snapchat、
+            TikTok、快手或其他第三方平台账号。
+        </p>
+
+        <h2>三、保存在设备本地的信息</h2>
+
+        <p>为了提供核心功能，App 可能在您的设备本地保存：</p>
+
+        <ul>
+            <li>您选择启用的平台；</li>
+            <li>通知时间及通知文案；</li>
+            <li>每日完成状态；</li>
+            <li>App 偏好和界面设置；</li>
+            <li>桌面及锁屏小组件显示所需的信息。</li>
+        </ul>
+
+        <p>
+            上述信息仅用于实现 App 功能，不会上传至我们的服务器。
+        </p>
+
+        <h2>四、通知权限</h2>
+
+        <p>
+            在获得您的授权后，StreakMate 可以按照您设置的时间发送本地通知。
+            通知由设备操作系统在本地调度。
+        </p>
+
+        <p>
+            您可以随时在设备的系统设置中关闭或修改通知权限。
+        </p>
+
+        <h2>五、桌面及锁屏小组件</h2>
+
+        <p>
+            StreakMate 提供桌面和锁屏小组件，用于展示已选择的平台及每日完成状态。
+        </p>
+
+        <p>
+            App 与小组件之间通过 Apple 提供的系统存储能力在设备本地共享必要信息，
+            这些信息不会发送给我们。
+        </p>
+
+        <h2>六、第三方平台</h2>
+
+        <p>
+            StreakMate 可能展示第三方平台的名称或图标，仅用于帮助您区分和整理
+            不同平台的日常互动。
+        </p>
+
+        <p>
+            StreakMate 是独立开发的应用，与抖音、QQ、快手、Snapchat、TikTok
+            及其他第三方平台不存在隶属、授权、赞助或官方合作关系。
+        </p>
+
+        <p>
+            我们不会读取您的第三方账号、密码、聊天内容、好友列表或平台活动记录。
+        </p>
+
+        <h2>七、信息共享与出售</h2>
+
+        <p>
+            我们不会向广告商、数据经纪商或其他第三方出售、出租、交换或共享您的
+            个人信息。
+        </p>
+
+        <p>
+            由于核心数据保存在您的设备本地，我们无法查看您的平台选择及每日完成记录。
+        </p>
+
+        <h2>八、追踪和广告</h2>
+
+        <p>
+            StreakMate 不会利用您的信息跨其他公司拥有的 App 或网站追踪您，
+            也不会根据您的平台选择或完成状态投放定向广告。
+        </p>
+
+        <h2>九、数据保留与删除</h2>
+
+        <p>
+            App 中的信息会保存在您的设备上，直到您主动修改、重置相关数据或删除 App。
+        </p>
+
+        <p>
+            您可以通过删除相关设置或卸载 StreakMate，清除保存在设备本地的数据。
+        </p>
+
+        <p>
+            由于 App 不要求注册账号，且不会将上述信息上传到服务器，因此不存在需要
+            单独注销的在线账号或服务器用户档案。
+        </p>
+
+        <h2>十、未成年人隐私</h2>
+
+        <p>
+            StreakMate 不会故意收集未成年人的个人信息。本 App 不提供公开个人主页、
+            聊天、随机匹配或与陌生人交流的功能。
+        </p>
+
+        <p>
+            如果监护人认为未成年人向我们提供了个人信息，可以通过下方邮箱与我们联系。
+        </p>
+
+        <h2>十一、信息安全</h2>
+
+        <p>
+            我们使用 iOS 系统提供的安全机制，帮助保护 App 在设备本地保存的信息。
+            但任何设备、软件或存储方式都无法保证绝对安全。
+        </p>
+
+        <h2>十二、隐私政策的更新</h2>
+
+        <p>
+            当 App 功能或适用要求发生变化时，我们可能更新本隐私政策。
+            更新后的内容将在本页面发布，并修改“最后更新日期”。
+        </p>
+
+        <h2>十三、联系我们</h2>
+
+        <p>
+            如您对本隐私政策或 App 的隐私处理方式存在疑问，请通过以下邮箱联系我们：
+        </p>
+
+        <p>
+            电子邮箱：
+            <a href="mailto:your-email@example.com">
+                your-email@example.com
+            </a>
+        </p>
+    </section>
+
+    <footer class="footer">
         © 2026 StreakMate. All rights reserved.
     </footer>
 
-</div>
-
+</main>
 </body>
 </html>
